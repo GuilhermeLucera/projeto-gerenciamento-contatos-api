@@ -1,5 +1,5 @@
 # Projeto-gerenciamento-contatos-api
-API RESTful para gerenciamento de contatos, desenvolvida em Java com Spring Boot e PostgreSQL.  Permite criar, atualizar, listar e excluir contatos, com hospedagem no Railway.
+API RESTful para gerenciamento de contatos, desenvolvida em Java com Spring Boot e PostgreSQL. Permite criar, atualizar, listar e excluir contatos, com hospedagem no Railway.
 
 ## 🔧 Tecnologias
 
@@ -18,6 +18,15 @@ API RESTful para gerenciamento de contatos, desenvolvida em Java com Spring Boot
 - `PATCH /contato/{id}` — Atualizar contato parcialmente
 - `DELETE /contato/{id}` — Excluir contato
 
+## 🗄️ Configuração do Banco de Dados
+Crie um banco no PostgreSQL e ajuste o arquivo `src/main/resources/application.properties`:
+
+```properties
+spring.datasource.url=
+spring.datasource.username=
+spring.datasource.password=
+```
+
 ## 📍 Como Rodar
 
 ```bash
@@ -33,6 +42,11 @@ mvn clean install
 
 # Executar localmente
 mvn spring-boot:run
-
 ```
+
+## 🌐 Acesso após rodar
+Após iniciar a aplicação, você poderá acessar:
+
+- **Swagger (documentação):** [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+
 [Guilherme Lucera / [LinkedIn](https://www.linkedin.com/in/guilherme-lucera-49997b213/)]
